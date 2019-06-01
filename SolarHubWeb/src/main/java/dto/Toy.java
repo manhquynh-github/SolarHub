@@ -20,7 +20,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "toy",
-       catalog = "toymanager"
+       catalog = "solarhubweb"
 )
 public class Toy implements Serializable, IDTO, IName {
     private long id;

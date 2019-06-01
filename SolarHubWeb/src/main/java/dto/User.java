@@ -22,7 +22,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "user",
-       catalog = "toymanager"
+       catalog = "solarhubweb"
 )
 public class User implements Serializable, IDTO {
     private long id;

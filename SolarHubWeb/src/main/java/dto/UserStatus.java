@@ -18,7 +18,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "user_status",
-       catalog = "toymanager"
+       catalog = "solarhubweb"
 )
 public class UserStatus implements Serializable, IDTO, IName {
     public static UserStatus ACTIVE = new UserStatus(1,

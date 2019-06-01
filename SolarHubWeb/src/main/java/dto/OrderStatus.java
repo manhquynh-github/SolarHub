@@ -18,7 +18,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "order_status",
-       catalog = "toymanager"
+       catalog = "solarhubweb"
 )
 public class OrderStatus implements Serializable, IDTO, IName {
     public static OrderStatus CANCELLED = new OrderStatus(4,

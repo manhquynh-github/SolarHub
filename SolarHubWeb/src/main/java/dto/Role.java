@@ -18,7 +18,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "role",
-       catalog = "toymanager"
+       catalog = "solarhubweb"
 )
 public class Role implements Serializable, IDTO, IName {
     private long id;

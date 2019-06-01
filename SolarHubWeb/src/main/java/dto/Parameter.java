@@ -13,7 +13,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "parameter",
-       catalog = "toymanager"
+       catalog = "solarhubweb"
 )
 public class Parameter implements Serializable, IDTO {
     private long id;

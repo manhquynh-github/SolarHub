@@ -5,18 +5,18 @@
         <div class="container">
             <ul class="header-links pull-left">
                 <li><a href="#"><i class="fa fa-phone"></i> +0988.546.255</a></li>
-                <li><a href="#"><i class="fa fa-envelope-o"></i> toymanager@email.com</a></li>
-                <li><a href="#"><i class="fa fa-map-marker"></i> 269 Điện Biên Phủ, Q. Bình Thạnh, TP Hồ Chí Minh</a>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> solarhub@email.com</a></li>
+                <li><a href="#"><i class="fa fa-map-marker"></i> 269 Ly Thuong Kiet, Tan Binh District, Ho Chi Minh City</a>
                 </li>
             </ul>
             <c:if test="${not empty USERMODEL}">
                 <ul class="header-links pull-right">
-                    <li><a href="<c:url value="/tai-khoan?id=1"/>"><i class="fa fa-user-o"></i> Tài khoản</a></li>
+                    <li><a href="<c:url value="/tai-khoan?id=1"/>"><i class="fa fa-user-o"></i> Account</a></li>
                 </ul>
             </c:if>
             <c:if test="${empty USERMODEL}">
                 <ul class="header-links pull-right">
-                    <li><a href="<c:url value="/dang-nhap?action=login"/>"><i class="fa fa-user-o"></i>Đăng nhập</a>
+                    <li><a href="<c:url value="/dang-nhap?action=login"/>"><i class="fa fa-user-o"></i>Sign In</a>
                     </li>
                 </ul>
             </c:if>
@@ -35,7 +35,7 @@
                     <div class="header-logo">
                         <a href="#" class="logo">
                             <%--                            <img src="<c:url value='/template/web/img/logo.png'/>" alt="">--%>
-                            <h1 style="margin-top: 15px; color:white" href="#">Toy Toy</h1>
+                            <h1 style="margin-top: 15px; color:white" href="#">Solar Hub</h1>
                         </a>
                     </div>
                 </div>
@@ -46,14 +46,12 @@
                     <div class="header-search">
                         <form>
                             <select class="input-select">
-                                <option value="0">Danh mục</option>
-                                <option value="1">Đồ chơi nam</option>
-                                <option value="1">Đồ chơi nữ</option>
-                                <option value="1">Đồ chơi gỗ</option>
-                                <option value="1">Lego</option>
+                                <option value="0">Category</option>
+                                <option value="1">EVN</option>
+                                <option value="1">Solar Pano</option>
                             </select>
-                            <input class="input" placeholder="Nhập từ khóa">
-                            <button class="search-btn">Tìm kiếm</button>
+                            <input class="input" placeholder="enter your keyword">
+                            <button class="search-btn">Search</button>
                         </form>
                     </div>
                 </div>
@@ -66,7 +64,7 @@
                         <div class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                                 <i class="fa fa-shopping-cart"></i>
-                                <span>Giỏ hàng</span>
+                                <span>Cart</span>
                                 <div class="qty">3</div>
                             </a>
                             <div class="cart-dropdown">
@@ -94,12 +92,12 @@
                                     </div>
                                 </div>
                                 <div class="cart-summary">
-                                    <small>3 sản phẩm</small>
-                                    <h5>Tổng: $2940.00</h5>
+                                    <small>3 products</small>
+                                    <h5>Total: $2940.00</h5>
                                 </div>
                                 <div class="cart-btns">
-                                    <a href="#">Giỏ hàng</a>
-                                    <a href="#">Thanh toán <i class="fa fa-arrow-circle-right"></i></a>
+                                    <a href="#">Cart</a>
+                                    <a href="#">Check out <i class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -131,13 +129,10 @@
         <div id="responsive-nav">
             <!-- NAV -->
             <ul class="main-nav nav navbar-nav">
-                <li class="active"><a href="#">Trang chủ</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Hot Deals</a></li>
-                <li><a href="#">Đồ chơi nam</a></li>
-                <li><a href="#">Đồ chơi nữ</a></li>
-                <li><a href="#">Đồ chơi gỗ</a></li>
-                <li><a href="#">Đồ chơi búp bê</a></li>
-                <li><a href="#">Lego</a></li>
+                <li><a href="#">EVN</a></li>
+                <li><a href="#">Solar</a></li>
             </ul>
             <!-- /NAV -->
         </div>
