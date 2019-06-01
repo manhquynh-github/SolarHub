@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<decorators defaultdir="/decorators">
+    <!--    api ko co giao dien-->
+    <excludes>
+        <pattern>/api*</pattern>
+    </excludes>
+    <decorator name="admin" page="admin.jsp">
+        <pattern>/admin*</pattern>
+    </decorator>
+    <decorator name="web-old" page="web-old.jsp">
+        <pattern>/web-old*</pattern>
+    </decorator>
+    <decorator name="web" page="web.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    <decorator name="category" page="category.jsp">
+        <pattern>/danh-muc*</pattern>
+    </decorator>
+    <decorator name="checkout" page="checkout.jsp">
+        <pattern>/checkout*</pattern>
+    </decorator>
+    <decorator name="account" page="account.jsp">
+        <pattern>/tai-khoan*</pattern>
+    </decorator>
+    <decorator name="login" page="login.jsp">
+        <pattern>/dang-nhap*</pattern>
+    </decorator>
+</decorators>
