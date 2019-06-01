@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from 'react-navigation';
 import TabBarIcon from '../components/TabBarIcon';
 import Colors from '../constants/Colors';
 import OverviewScreen from '../screens/OverviewScreen';
+import AnalyticsScreen from '../screens/AnalyticsScreen';
 import ContactScreen from '../screens/ContactScreen';
 
 export default createBottomTabNavigator(
@@ -17,12 +18,21 @@ export default createBottomTabNavigator(
         ),
       },
     },
+    Analytics: {
+      screen: AnalyticsScreen,
+      navigationOptions: {
+        title: 'Analytics',
+        tabBarIcon: ({ focused }) => (
+          <TabBarIcon focused={focused} name="linechart" type="AntDesign" />
+        ),
+      },
+    },
     Contact: {
       screen: ContactScreen,
       navigationOptions: {
         title: 'Contact',
         tabBarIcon: ({ focused }) => (
-          <TabBarIcon focused={focused} name="ios-contact" type="Ionicons" />
+          <TabBarIcon focused={focused} name="phone" type="Entypo" />
         ),
       },
     },

@@ -97,7 +97,7 @@ export default class OverviewScreen extends Component {
                     <Text
                       uppercase={false}
                       style={{ ...styles.statsContent, color: 'green' }}>
-                      10 kWh
+                      3.33 MW
                     </Text>
                   </View>
                 </TouchableNativeFeedback>
@@ -113,7 +113,7 @@ export default class OverviewScreen extends Component {
                     <Text
                       uppercase={false}
                       style={{ ...styles.statsContent, color: 'red' }}>
-                      10 kWh
+                      2.83 MW
                     </Text>
                   </View>
                 </TouchableNativeFeedback>
@@ -131,7 +131,7 @@ export default class OverviewScreen extends Component {
                     <Text
                       uppercase={false}
                       style={{ ...styles.statsContent, color: 'green' }}>
-                      $1000
+                      $1.3K
                     </Text>
                   </View>
                 </TouchableNativeFeedback>
@@ -147,7 +147,7 @@ export default class OverviewScreen extends Component {
                     <Text
                       uppercase={false}
                       style={{ ...styles.statsContent, color: 'green' }}>
-                      $799
+                      $749
                     </Text>
                   </View>
                 </TouchableNativeFeedback>
