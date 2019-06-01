@@ -6,6 +6,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import ChartScreen from '../screens/ChartScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -53,8 +54,22 @@ SettingsStack.navigationOptions = {
   ),
 };
 
+const ChartStack = createStackNavigator({
+  Chart: ChartScreen
+});
+
+ChartStack.navigationOptions = {
+  tabBarLabel: 'Statistics',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={Platform.OS === 'ios' ? 'ios-stats' : 'md-stats'}
+    />
+  )
+}
+
 export default createBottomTabNavigator({
   HomeStack,
-  LinksStack,
+  ChartStack,
   SettingsStack,
 });
