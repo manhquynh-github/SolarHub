@@ -319,7 +319,7 @@
             <!-- section title -->
             <div class="col-md-12">
                 <div class="section-title">
-                    <h3 class="title">BÁN CHẠY</h3>
+                    <h3 class="title">BEST SELLER</h3>
                 </div>
             </div>
             <!-- /section title -->

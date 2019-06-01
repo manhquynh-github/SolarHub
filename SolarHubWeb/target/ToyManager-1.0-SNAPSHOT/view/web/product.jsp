@@ -23,9 +23,7 @@
                 <ul class="breadcrumb-tree">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">All Categories</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Headphones</a></li>
-                    <li class="active">Product name goes here</li>
+                    <li class="active"><a href="#">SOTO</a></li>
                 </ul>
             </div>
         </div>
@@ -34,7 +32,56 @@
     <!-- /container -->
 </div>
 <!-- /BREADCRUMB -->
+<!-- PROGRESS BAR SECTION -->
+<div id="hot-deal1" class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-sm-7 col-md-4">
+                <h3 class="text">Estimate cost (USD)?</h3>
+            </div>
+            <div class="col-sm-7 col-md-4">
+                <!-- ----- -->
+                <div id="slidecontainer">
 
+                    <h1>Area :</h1>
+                    <input type="range" min="0" max="100" value="0" class="slider-color" id="id1" step="3"></p>
+
+                </div>
+
+                <!-- -------- -->
+
+            </div>
+            <div class="col-sm-7 col-md-4">
+                <h2><span>Area:</span> <span id="a" style="font-weight:bold;color:red">0</span><span> m2</span></h2>
+                <h2><span>KwH:</span> <span id="k" style="font-weight:bold;color:red">0</span></h2>
+                <h2><span id="f" style="font-weight:bold;color:red">0</span><span> $</span></h2>
+            </div>
+            <script>
+
+                var slideCol = document.getElementById("id1");
+                var a = document.getElementById("a");
+                var k = document.getElementById("k");
+                var y = document.getElementById("f");
+
+                slideCol.oninput = function() {
+                    var iarea = slideCol.value;
+                    var iKwh = iarea*7;
+                    var iMoney = iKwh*700;
+
+
+                    a.innerHTML = iarea;
+                    k.innerHTML = iKwh;
+                    y.innerHTML = iMoney;
+                }
+            </script>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /PROCESS BAR SECTION -->
 <!-- SECTION -->
 <div class="section">
     <!-- container -->
@@ -45,19 +92,19 @@
             <div class="col-md-5 col-md-push-2">
                 <div id="product-main-img">
                     <div class="product-preview">
-                        <img src="./img/product01.png" alt="">
+                        <img src="<c:url value="/template/web/img/product01.png"/>" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="./img/product03.png" alt="">
+                        <img src="<c:url value="/template/web/img/product03.png"/>" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="./img/product06.png" alt="">
+                        <img src="<c:url value="/template/web/img/product07.png"/>" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="./img/product08.png" alt="">
+                        <img src="<c:url value="/template/web/img/product08.png"/>" alt="">
                     </div>
                 </div>
             </div>
@@ -67,19 +114,19 @@
             <div class="col-md-2  col-md-pull-5">
                 <div id="product-imgs">
                     <div class="product-preview">
-                        <img src="./img/product01.png" alt="">
+                        <img src="<c:url value="/template/web/img/product01.png"/>" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="./img/product03.png" alt="">
+                        <img src="<c:url value="/template/web/img/product03.png"/>" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="./img/product06.png" alt="">
+                        <img src="<c:url value="/template/web/img/product06.png"/>" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="./img/product08.png" alt="">
+                        <img src="<c:url value="/template/web/img/product08.png"/>" alt="">
                     </div>
                 </div>
             </div>
@@ -88,7 +135,7 @@
             <!-- Product details -->
             <div class="col-md-5">
                 <div class="product-details">
-                    <h2 class="product-name">product name goes here</h2>
+                    <h2 class="product-name">GIVASOLAR Mono MSP (Monocrystalline)</h2>
                     <div>
                         <div class="product-rating">
                             <i class="fa fa-star"></i>
@@ -100,35 +147,35 @@
                         <a class="review-link" href="#">10 Review(s) | Add your review</a>
                     </div>
                     <div>
-                        <h3 class="product-price">$980.00
-                            <del class="product-old-price">$990.00</del>
+                        <h3 class="product-price">$480.00
+                            <del class="product-old-price">$590.00</del>
                         </h3>
                         <span class="product-available">In Stock</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                    <div class="product-options">
-                        <label>
-                            Size
-                            <select class="input-select">
-                                <option value="0">X</option>
-                            </select>
-                        </label>
-                        <label>
-                            Color
-                            <select class="input-select">
-                                <option value="0">Red</option>
-                            </select>
-                        </label>
-                    </div>
+                    <p>
+                        Place of Origin:    Fujian, China (Mainland)
+                        <br>
+                        Model Number:     RG280M6-60
+                        <br/>
+                        <br>
+                        Size:     1640*992*35mm
+                        <br/>
+                        <br>
+                        Connector:         MC4
+                        <br/>
+                        <br>
+                        Voc:   39.2V
+                        <br/>
+                        <br>
+                        Vmp:     32.0V
+                        <br/>
+                    </p>
 
                     <div class="add-to-cart">
                         <div class="qty-label">
                             Qty
                             <div class="input-number">
-                                <input type="number">
+                                <input type="number" value="1">
                                 <span class="qty-up">+</span>
                                 <span class="qty-down">-</span>
                             </div>
@@ -143,8 +190,8 @@
 
                     <ul class="product-links">
                         <li>Category:</li>
-                        <li><a href="#">Headphones</a></li>
-                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">SolarBK</a></li>
+                        <li><a href="#">GIVASOLAR </a></li>
                     </ul>
 
                     <ul class="product-links">
@@ -176,12 +223,8 @@
                         <div id="tab1" class="tab-pane fade in active">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Astronergy/Chint Solar is a specialized subsidiary of the CHINT group engaged in PV power station development and PV module production. Astronergy is currently one of the largest PV power generation enterprises with 3500MWp of PV Power Stations and 2500MWp module production capacity.
+                                        Astronergy modules are rigorously subjected to a series of tests including mechanical loading, hail, and PID resistance. Their panels have been rated as Tier 1 by Bloomberg and were the first to pass the TUV Nord IEC/TS 62941 certification audit. Astronergy PV modules feature positive output tolerance, innovative 5-busbar cells, PERC cell technology, excellent mechanical load capability, and higher reliability and durability in harsh environments.</p>
                                 </div>
                             </div>
                         </div>
@@ -191,12 +234,8 @@
                         <div id="tab2" class="tab-pane fade in">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Astronergy CHSM6610M-285/HV
+                                        Astronergy CHSM6610M-285/HV solar panels are a reliable and cost-effective 60-cell panel suitable for residential, commercial and utility-scale PV systems. Astronergy panels feature a positive power tolerance, PERC cells and 5 busbar construction, making them one of the best values in the industry.</p>
                                 </div>
                             </div>
                         </div>
@@ -306,8 +345,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="review-body">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                    <p>Good</p>
                                                 </div>
                                             </li>
                                             <li>
@@ -323,8 +361,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="review-body">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                    <p>So excited</p>
                                                 </div>
                                             </li>
                                             <li>
@@ -340,8 +377,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="review-body">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                    <p>Hello</p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -415,7 +451,7 @@
             <div class="col-md-3 col-xs-6">
                 <div class="product">
                     <div class="product-img">
-                        <img src="./img/product01.png" alt="">
+                        <img src="<c:url value="/template/web/img/product01.png"/>" alt="">
                         <div class="product-label">
                             <span class="sale">-30%</span>
                         </div>
@@ -448,16 +484,16 @@
             <div class="col-md-3 col-xs-6">
                 <div class="product">
                     <div class="product-img">
-                        <img src="./img/product02.png" alt="">
+                        <img src="<c:url value="/template/web/img/product02.png"/>" alt="">
                         <div class="product-label">
                             <span class="new">NEW</span>
                         </div>
                     </div>
                     <div class="product-body">
-                        <p class="product-category">Category</p>
-                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                        <h4 class="product-price">$980.00
-                            <del class="product-old-price">$990.00</del>
+                        <p class="product-category">MEGASUN</p>
+                        <h3 class="product-name"><a href="#">MEGASUN 30W</a></h3>
+                        <h4 class="product-price">$280.00
+                            <del class="product-old-price">$300.00</del>
                         </h4>
                         <div class="product-rating">
                             <i class="fa fa-star"></i>
@@ -488,13 +524,13 @@
             <div class="col-md-3 col-xs-6">
                 <div class="product">
                     <div class="product-img">
-                        <img src="./img/product03.png" alt="">
+                        <img src="<c:url value="/template/web/img/product03.png"/>" alt="">
                     </div>
                     <div class="product-body">
-                        <p class="product-category">Category</p>
-                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                        <h4 class="product-price">$980.00
-                            <del class="product-old-price">$990.00</del>
+                        <p class="product-category">Năng Lượng Bền Vững</p>
+                        <h3 class="product-name"><a href="#">Năng Lượng Bền Vững Panel 35W</a></h3>
+                        <h4 class="product-price">$280.00
+                            <del class="product-old-price">$300.00</del>
                         </h4>
                         <div class="product-rating">
                             <i class="fa fa-star"></i>
@@ -523,13 +559,13 @@
             <div class="col-md-3 col-xs-6">
                 <div class="product">
                     <div class="product-img">
-                        <img src="./img/product04.png" alt="">
+                        <img src="<c:url value="/template/web/img/product04.png"/>" alt="">
                     </div>
                     <div class="product-body">
-                        <p class="product-category">Category</p>
-                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                        <h4 class="product-price">$980.00
-                            <del class="product-old-price">$990.00</del>
+                        <p class="product-category">VIMETCO</p>
+                        <h3 class="product-name"><a href="#">Panel VIMETCO</a></h3>
+                        <h4 class="product-price">$380.00
+                            <del class="product-old-price">$600.00</del>
                         </h4>
                         <div class="product-rating">
                         </div>
