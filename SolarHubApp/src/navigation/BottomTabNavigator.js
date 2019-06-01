@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from 'react-navigation';
 import TabBarIcon from '../components/TabBarIcon';
 import Colors from '../constants/Colors';
 import OverviewScreen from '../screens/OverviewScreen';
+import ContactScreen from '../screens/ContactScreen';
 
 export default createBottomTabNavigator(
   {
@@ -12,7 +13,16 @@ export default createBottomTabNavigator(
       navigationOptions: {
         title: 'Overview',
         tabBarIcon: ({ focused }) => (
-          <TabBarIcon focused={focused} name="ios-home" type="MaterialIcons" />
+          <TabBarIcon focused={focused} name="home" type="Entypo" />
+        ),
+      },
+    },
+    Contact: {
+      screen: ContactScreen,
+      navigationOptions: {
+        title: 'Contact',
+        tabBarIcon: ({ focused }) => (
+          <TabBarIcon focused={focused} name="ios-contact" type="Ionicons" />
         ),
       },
     },
