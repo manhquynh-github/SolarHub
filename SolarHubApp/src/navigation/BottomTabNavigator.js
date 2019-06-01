@@ -25,6 +25,9 @@ export default createBottomTabNavigator(
         elevation: 10,
         borderTopWidth: 0,
       },
+      labelStyle: {
+        color: '#000',
+      },
     },
     navigationOptions: {
       tabBarButtonComponent: (props) => (

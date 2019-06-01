@@ -8,7 +8,7 @@ export default {
   lightPrimary,
   tintColor: primary,
   tabIconDefault: '#ccc',
-  tabIconSelected: primary,
+  tabIconSelected: '#000',
   tabBar: '#fefefe',
   errorBackground: 'red',
   errorText: '#fff',
